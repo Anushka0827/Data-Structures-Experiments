@@ -6,23 +6,30 @@
 Data Structures and Algorithms/
 ├── 01_matrices/
 │   └── matrix_operations.c       # Addition, subtraction, multiplication, transpose
+│
 ├── 02_sparse_matrix/
-│   └── sparse_matrix.c           # Compact, simple transpose, fast transpose, addition
+│   └── sparse_matrix.c           # Triplet representation, simple transpose, fast transpose, addition
+│
 ├── 03_searching_and_sorting/
-│   └── student_database.c        # Linear, sentinel, binary (iterative/recursive), bubble, selection, insertion, shell, radix
+│   └── student_database.c        # Linear search, binary search, insertion, selection, shell sort
+│
 ├── 04_singly_linked_list/
 │   └── workshop_enrollment.c     # Add, remove, display, count, sort, reverse
+│
 ├── 05_circular_linked_list/
 │   └── polynomial_cll.c          # Create, display, and add polynomials
+│
 ├── 06_stacks/
 │   ├── infixtopostfix.c          # Infix to postfix conversion
 │   ├── infixtoprefix.c           # Infix to prefix conversion
 │   ├── postfixtoinfix.c          # Postfix to infix conversion
 │   ├── prefixtoinfix.c           # Prefix to infix conversion
 │   └── evaluate_postfix.c        # Postfix expression evaluation
+│
 ├── 07_circular_queue/
-│   ├── printer_queue.c           # Circular queue using array (AddCQ, DelCQ with front=rear=0)
-│   └── queue_linked_list.c       # Queue using linked list (enqueue, dequeue, isempty)
+│   ├── printer_queue.c           # Printer simulation using circular queue
+│   └── queue_linked_list.c       # Queue using linked list
+│
 ├── Makefile                      # Easy compilation
 └── README.md
 ```
@@ -54,7 +61,7 @@ gcc 04_singly_linked_list/workshop_enrollment.c -o 04_singly_linked_list/worksho
 ./04_singly_linked_list/workshop_enrollment
 
 # Polynomial operations (Circular Linked List)
-gcc 05_circular_linked_list/polynomial_cll.c -o 05_circular_linked_list/polynomial_cll
+gcc 05_circular_linked_list/polynomial_cll.c -o 05_circular_linked_list/polynomial_cll -lm
 ./05_circular_linked_list/polynomial_cll
 
 # Stacks
@@ -73,10 +80,11 @@ gcc 06_stacks/prefixtoinfix.c -o 06_stacks/prefixtoinfix
 gcc 06_stacks/evaluate_postfix.c -o 06_stacks/evaluate_postfix -lm
 ./06_stacks/evaluate_postfix
 
-# Queues
+# Circular queue
 gcc 07_circular_queue/printer_queue.c -o 07_circular_queue/printer_queue
 ./07_circular_queue/printer_queue
 
+# Queue using linked list
 gcc 07_circular_queue/queue_linked_list.c -o 07_circular_queue/queue_linked_list
 ./07_circular_queue/queue_linked_list
 ```
