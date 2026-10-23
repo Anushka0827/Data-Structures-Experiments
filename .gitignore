@@ -1,0 +1,15 @@
+# Compiled binaries and object files
+*.o
+*.out
+matrix_operations
+sparse_matrix
+student_database
+workshop_enrollment
+polynomial_cll
+infix_conversion
+postfix_evaluation
+printer_queue
+
+# OS generated files
+.DS_Store
+Thumbs.db
